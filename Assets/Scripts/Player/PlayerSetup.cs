@@ -7,7 +7,7 @@ public class PlayerSetup : MonoBehaviour
     public Animator playerAnimator;
     public TMP_Text playerNameText;
 
-    private void Start()
+    private void OnEnable()
     {
         playerNameText.text = DataManager.instance.playerName;
         playerAnimator.runtimeAnimatorController = animatorController[DataManager.instance.classId];
