@@ -3,11 +3,11 @@ using UnityEngine.SceneManagement;
 using TMPro;
 using UnityEngine.UI;
 
-public class IntroUI : MonoBehaviour
+public class StartSceneUI : MonoBehaviour
 {
-    public TMP_InputField inputField;
     public Sprite[] classSprites;
     public Image selectedClass;
+    public TMP_InputField inputField;
 
     public void ChoiceClass(int id)
     {
