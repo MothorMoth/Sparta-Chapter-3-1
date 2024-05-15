@@ -26,4 +26,9 @@ public class MainSceneUI : MonoBehaviour
         player.SetActive(true);
         nameChangePanel.SetActive(false);
     }
+
+    public void OnClickClassChangeButton(int id)
+    {
+        DataManager.instance.classId = id;
+    }
 }
