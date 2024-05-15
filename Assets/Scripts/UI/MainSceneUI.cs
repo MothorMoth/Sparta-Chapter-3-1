@@ -5,6 +5,7 @@ using UnityEngine;
 public class MainSceneUI : MonoBehaviour
 {
     public TMP_Text timeText;
+    public TMP_Text playerNameText;
     public TMP_InputField inputField;
     public GameObject player;
     public GameObject nameChangePanel;
@@ -12,6 +13,7 @@ public class MainSceneUI : MonoBehaviour
     private void Update()
     {
         timeText.text = DateTime.Now.ToString("HH : mm");
+        playerNameText.text = DataManager.instance.playerName;
     }
 
     public void OnClickNameChangeButton()
