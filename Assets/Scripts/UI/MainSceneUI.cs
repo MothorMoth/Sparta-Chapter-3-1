@@ -6,9 +6,15 @@ public class MainSceneUI : MonoBehaviour
 {
     public TMP_Text timeText;
     public TMP_Text playerNameText;
+    public TMP_Text NPCNameText;
     public TMP_InputField inputField;
     public GameObject player;
     public GameObject nameChangePanel;
+
+    private void Start()
+    {
+        NPCNameText.text = DataManager.instance.NPCName;
+    }
 
     private void Update()
     {
